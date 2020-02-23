@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-02-20 16:26:32
- * @LastEditTime: 2020-02-21 00:31:06
+ * @LastEditTime: 2020-02-23 22:20:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /bmlms-web/src/app/app.module.ts
@@ -21,7 +21,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { RouterModule } from '@angular/router';
 
@@ -39,9 +38,6 @@ import { RoutesModule } from './routes/routes.module'
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule,
-
-    FlexLayoutModule,
-
 
     LayoutModule,
     RoutesModule,

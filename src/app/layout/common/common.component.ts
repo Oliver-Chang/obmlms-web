@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-02-20 23:00:49
- * @LastEditTime: 2020-02-21 00:01:44
- * @LastEditors: your name
+ * @LastEditTime: 2020-02-23 21:44:23
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /bmlms-web/src/app/layout/common/common.component.ts
  */
@@ -15,9 +15,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommonLayoutComponent implements OnInit {
 
-  constructor() { }
+  // constructor() { }
 
   ngOnInit(): void {
   }
+  showFiller = false;
 
 }

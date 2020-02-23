@@ -1,9 +1,39 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <button mat-icon-button color="Basic" >
-        <mat-icon aria-label="list">menu</mat-icon>
-      </button>
-    </mat-toolbar-row>
-</mat-toolbar>
+<!--
+ * @Author: your name
+ * @Date: 2020-02-20 23:00:49
+ * @LastEditTime: 2020-02-24 00:08:35
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /bmlms-web/src/app/layout/common/common.component.html
+ -->
 
-<router-outlet></router-outlet>
+
+<mat-drawer-container color="primary" fxFlexFill autosize>
+
+  <mat-drawer #siderDrawer class="example-sidenav" mode="side" color="primary">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+  <!-- fxLayoutAlign="space-between center" -->
+  <mat-toolbar color="primary">
+    <button mat-icon-button color="Basic" (click)="siderDrawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span fxFlex></span>
+    <app-notification></app-notification>
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
+
+  <h1>asdasda</h1>
+  <h1>asdasda</h1>
+  <h1>asdasda</h1>
+  <h1>asdasda</h1>
+
+</mat-drawer-container>
